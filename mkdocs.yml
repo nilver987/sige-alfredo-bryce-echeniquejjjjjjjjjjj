@@ -1,0 +1,43 @@
+site_name: Programación para secundaria
+site_description: ¿Qué es programar? y fundamentos con JavaScript
+site_author: nilver
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Inicio: index.md
+  - "Sesión 1: ¿Qué es programar?": sesion-1.md
+  - "Sesión 2: Fundamentos": sesion-2.md
+  - "Sesión 3: Condicionales": sesion-3.md
+  - "Sesión 4: Ciclos": sesion-4.md
+  - "Proyecto final: calculadora web": proyecto-final.md
